@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ptcost"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/MyTheme2"
+        android:background="#A1332B"
+        app:popupTheme="@style/MyTheme2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recvptcost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/total_cost_pasttrip"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B8B8B8" />
+
+    <TextView
+        android:id="@+id/total_cost_pasttrip"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbar_ptcost"
+        android:hint="Total Expenses"
+        android:textAlignment="viewEnd"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="60dp"
+        android:textColor="#57D30A"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        tools:ignore="RtlCompat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

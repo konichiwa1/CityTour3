@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFAFA"
+    tools:context=".ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textColor="#A1332B"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/nameEditText"
+                android:layout_marginBottom="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/nameEditText"
+                android:layout_marginBottom="40dp"
+                android:background="#898383"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@id/nameEditText"
+                android:text="Name"
+                android:textColor="@color/Black"
+                android:paddingLeft="20dp"/>
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="#131313"
+                android:textColorHighlight="#A1332B"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="#A1332B"
+                android:textSize="20sp"
+                android:layout_above="@id/dateEditText"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="23dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@id/dateEditText"
+                android:text="Date of Birth"
+                android:textColor="@color/Black"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/dateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Date of Birth(dd/mm/yyyy)"
+                android:paddingTop="10dp"
+                android:inputType="date"
+                android:textColor="#101010"
+                android:textColorHighlight="#A1332B"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="#A1332B"
+                android:textSize="20sp"
+                android:layout_above="@id/phoneEditText"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="23dp"
+                android:clickable="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@id/phoneEditText"
+                android:text="Phone"
+                android:textColor="@color/Black"
+                android:paddingLeft="20dp"/>
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textColor="#131313"
+                android:textColorHighlight="#A1332B"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="#A1332B"
+                android:textSize="20sp"
+                android:layout_above="@id/profEditText"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="23dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_above="@id/profEditText"
+                android:text="Profession"
+                android:textColor="@color/Black"
+                android:paddingLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/profEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:hint="Profession"
+                android:inputType="textPersonName"
+                android:textColor="#131313"
+                android:textColorHighlight="#A1332B"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="#A1332B"
+                android:textSize="20sp"
+                android:layout_above="@+id/saveButton"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="30dp"
+                />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="#A1332B"
+                android:text="save changes"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

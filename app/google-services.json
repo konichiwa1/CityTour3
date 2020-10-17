@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "223861713154",
+    "firebase_url": "https://citytour-70d7e.firebaseio.com",
+    "project_id": "citytour-70d7e",
+    "storage_bucket": "citytour-70d7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223861713154:android:4801b7a78396abcdf37a1b",
+        "android_client_info": {
+          "package_name": "com.example.citytour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223861713154-siiug1klfriteqrt1uqq5pedufnkkub6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbKgz60MHMlztyfUP-6JR8vPwmqkJn2DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223861713154-siiug1klfriteqrt1uqq5pedufnkkub6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

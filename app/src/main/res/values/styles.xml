@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">#A1332B</item>
+        <item name="colorAccent">#A1332B</item>
+        <item name="colorPrimaryDark">#A1332B</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myTheme" parent="AppTheme">
+        <item name="colorPrimary">#A1332B</item>
+        <item name="colorPrimaryDark">#A1332B</item>
+        <item name="colorAccent">#A1332B</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">#A1332B</item>
+        <item name="colorAccent">#A1332B</item>
+        <item name="colorPrimaryDark">#A1332B</item>
+    </style>
+
+    <style name="MyTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#A1332B</item>
+        <item name="colorAccent">#A1332B</item>
+        <item name="colorPrimaryDark">#A1332B</item>
+    </style>
+
+    <style name="Theme.CityTour" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#A1332B</item>
+        <item name="colorPrimaryVariant">#A1332B</item>
+        <item name="colorOnPrimary">#A1332B</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#A1332B</item>
+        <item name="colorSecondaryVariant">#A1332B</item>
+        <item name="colorOnSecondary">#A1332B</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.CityTour.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

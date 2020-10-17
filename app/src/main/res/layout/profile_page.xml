@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/flt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1332B"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/usp_image"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#A1332B"
+        android:layout_below="@+id/flt"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#DAB021"
+        android:layout_below="@id/flt"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/usp_image"
+        android:layout_width="158dp"
+        android:layout_height="172dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#DAB021"
+        app:civ_border_width="2dp"
+        android:layout_above="@+id/name_cv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"/>
+
+    <ImageButton
+        android:id="@+id/usp_uploadimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D61E1E"
+        android:src="@android:drawable/ic_menu_upload"
+        android:tint="#FFFFFF"
+        android:layout_alignRight="@+id/usp_image"
+        android:layout_alignBottom="@+id/usp_image"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/name_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/phone_cv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_ttl"
+                android:layout_width="match_parent"
+                android:text="NAME"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#C4BABA"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/usp_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="John"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:gravity="top"
+                android:textColor="@color/Black"
+                android:layout_below="@+id/name_ttl"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/phone_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/email_cv"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/phone_ttl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="PHONE"
+                android:textSize="16dp"
+                android:textColor="#C4BABA"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/usp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="9876543210"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:gravity="top"
+                android:layout_below="@+id/phone_ttl"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/profession_cv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/email_ttl"
+                android:layout_width="match_parent"
+                android:text="EMAIL"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#C4BABA"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/usp_email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="John@john.com"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:gravity="top"
+                android:layout_below="@+id/email_ttl"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profession_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dob_cv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="1dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/profession_ttl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="PROFESSION"
+                android:textSize="16dp"
+                android:textColor="#C4BABA"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/usp_profession"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="nothing"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:gravity="top"
+                android:layout_below="@+id/profession_ttl"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dob_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dob_ttl"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="DATE OF BIRTH"
+                android:textSize="16dp"
+                android:textColor="#C4BABA"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/usp_dob"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="01/02/2001"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:gravity="top"
+                android:layout_below="@+id/dob_ttl"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

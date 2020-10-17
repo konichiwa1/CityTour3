@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ablrecv"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/MyTheme2"
+        android:background="#A1332B"
+        app:popupTheme="@style/MyTheme2"/>
+
+
+    <Button
+        android:id="@+id/photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photos"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        android:textAlignment="viewStart"
+        android:padding="20dp"
+        android:background="@color/cardview_light_background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B8B8B8" />
+
+    <Button
+        android:id="@+id/experiences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="experiences"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"
+        android:padding="20dp"
+        android:background="@color/design_default_color_background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B8B8B8" />
+
+    <Button
+        android:id="@+id/costs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="costs"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"
+        android:padding="20dp"
+        android:background="@color/cardview_light_background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B8B8B8" />
+
+</LinearLayout>
